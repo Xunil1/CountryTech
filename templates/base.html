@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-<div class="container">
+<!--<div class="container">-->
     <nav>
-      <img class="nav-mylogo" src="{{ url_for('static', filename='images/Фон.png') }}" alt="">
-      
+        <a href="/"><img class="nav-mylogo" src="{{ url_for('static', filename='images/Фон.png') }}" alt=""></a>
+
       <ul class="nav-mylist">
         <li class="nav-myitem"><a class="nav-mylink" href="#">Услуги</a></li>
         <li class="nav-myitem"><a class="nav-mylink" href="#">Продукция</a></li>
@@ -21,25 +21,8 @@
         <li class="nav-myitem"><a class="nav-mylink" href="#">О нас</a></li>
         <li class="nav-myitem"><a class="nav-mylink" href="#">Контакты</a></li>
       </ul>
-     
-      
     </nav>
-    <!-- <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">БашСельХозТехника</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-      </ul>
-    </header> -->
     {%block body%} {%endblock%}
-</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
